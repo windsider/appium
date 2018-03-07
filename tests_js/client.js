@@ -1,5 +1,4 @@
 const wdio = require('webdriverio');
-
 var client;
 
 function client() {
