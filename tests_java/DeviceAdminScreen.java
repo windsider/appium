@@ -1,17 +1,19 @@
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+import java.util.List;
 
 public class DeviceAdminScreen extends PageObject {
 
-    @FindBy(xpath = "//android.widget.RelativeLayout/android.widget.TextView")
-    private WebElement encrpt;
+    @AndroidFindBy(className = "android.widget.TextView")
+    private List<AndroidElement> encrptItem;
 
-    public DeviceAdminScreen(AppiumDriver driver) {
+    public DeviceAdminScreen( AppiumDriver driver) {
         super(driver);
     }
 
     public String confirmationEncryption() {
-        return encrpt.getText();
+        return encrptItem.get(5).getText();
     }
 }

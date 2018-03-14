@@ -1,15 +1,15 @@
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.ElementNotInteractableException;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class InitialScreen extends PageObject {
 
-    @FindBy(xpath = "//android.widget.TextView[@content-desc='App']")
-    private WebElement appItem;
+    @AndroidFindBy(accessibility = "App")
+    private AndroidElement appItem;
 
 
-    public InitialScreen(AppiumDriver driver) {        
+    public InitialScreen(AppiumDriver driver) {
         super(driver);
 
     }
