@@ -10,7 +10,6 @@ public class InitialScreen extends PageObject {
  @AndroidFindBy(accessibility = "App")
  private AndroidElement appItem;
 
-
  public InitialScreen(AppiumDriver driver) { 
   super(driver);
  }
