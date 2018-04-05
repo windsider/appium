@@ -97,8 +97,8 @@ public class SimpleTest {
         }
     }
 
-    @Test(priority = 2, description = "asserts transition to Sale page")
-    public void transitionToSalePage() {
+    @Test(priority = 2, description = "asserts transition to Women page")
+    public void transitionToWomenPage() {
         try {
             driver.findElement (By.linkText ("Women")).click ();
             Assert.assertEquals (driver.getTitle (), "Womenswear | Clothing, Shoes & Accessories For Women | M&S");
