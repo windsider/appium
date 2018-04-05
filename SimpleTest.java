@@ -51,7 +51,7 @@ public class SimpleTest {
         assertEquals(logoLink, "http://www.marksandspencer.com/");
     }
 
-    @Test( priority = 0, description = "verifies search feature")
+    @Test(priority = 0, description = "verifies search feature")
     public void verifySearch() throws InterruptedException {
 
         WebElement searchInput = driver.findElement(By.cssSelector("input[class = 'search-bar--search-lg ng-pristine ng-untouched ng-valid ng-empty']"));
