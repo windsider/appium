@@ -12,7 +12,6 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
-
 import static org.testng.Assert.assertEquals;
 
 
@@ -88,7 +87,7 @@ public class SimpleTest {
         }
     }
 
-    @Test( priority = 2, description = "asserts transition to Register page")
+    @Test(priority = 2, description = "asserts transition to Register page")
     public void transitionToRegisterPage() {
         try {
             driver.findElement (By.linkText ("Register")).click ();
