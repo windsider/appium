@@ -82,7 +82,7 @@ public class SimpleTest {
         List < WebElement > categoryItemList = navPrimList.findElements(By.cssSelector("li > a"));
         List controlCategoryItemList = Arrays.asList("Inspire Me", "Women", "Lingerie", "Beauty", "Men", "Kids", "Home", "Furniture", "Food", "Wine", "Flowers", "Hampers & Gifts", "Offers", "M&S Bank");
 
-        for (int i = 0; i < categoryItemList.size(); i++) {
+        for (int i = 0; i < controlCategoryItemList.size(); i++) {
             Assert.assertEquals(categoryItemList.get(i).getText(), controlCategoryItemList.get(i));
         }
     }
